@@ -14,6 +14,7 @@ body {
 .header {
 
   height: 10vh;
+  font-size: $bannerHeading;
  
   .header--brand,
   .header--title {
@@ -31,11 +32,18 @@ body {
 }
 
 .bet-list {
-  width: 60%; 
-  margin-left: 20%; 
-  margin-right: 20%;
+  width: 90%; 
+  margin-left: 5%; 
+  margin-right: 5%;
   margin-bottom: 2em;
   text-align: left;
+
+  @include mQ(1024px) {
+    width: 60%; 
+    margin-left: 20%; 
+    margin-right: 20%;
+  }
+
 
   caption {
     width: 99%;
@@ -63,6 +71,7 @@ body {
   margin: auto;
 
   h1 {
+    font-size: $bannerHeading;
     @include linearGradient($liteBlue, $darkBlue);
     border-radius: 5px;
   }

@@ -48,7 +48,8 @@ body {
   margin-top: 10vh; }
 
 .header {
-  height: 10vh; }
+  height: 10vh;
+  font-size: 3vw; }
   .header .header--brand,
   .header .header--title {
     padding: 5px 10px; }
@@ -90,11 +91,16 @@ body {
     border-radius: 0 5px 5px 0; }
 
 .bet-list {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 2em;
   text-align: left; }
+  @media screen and (min-width: 1024px) {
+    .bet-list {
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%; } }
   .bet-list caption {
     width: 99%;
     margin: auto;
@@ -115,6 +121,7 @@ body {
   margin: auto; }
   .betslip h1,
   .betreceipt h1 {
+    font-size: 3vw;
     background: #0F59DF;
     /* Old browsers */
     background: -moz-linear-gradient(top, #0F59DF 0%, #010E43 100%);
