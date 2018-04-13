@@ -2,3 +2,69 @@
 @import "variables";
 @import "mixins";
 
+body {
+  height: 100vh;
+  color: $white;
+  @include linearGradient($blue, $liteBlue);
+}
+
+.wrapper {
+ margin-top: 10vh;
+}
+.header {
+
+  height: 10vh;
+ 
+  .header--brand,
+  .header--title {
+    padding: 5px 10px;
+  }
+  .header--brand {
+    @include linearGradient($liteBlue, $darkBlue);
+    border-radius: 5px 0 0 5px;
+  }
+  .header--title {
+    @include linearGradient($liteRed, $darkRed);
+    border-radius: 0 5px 5px 0;
+  }
+
+}
+
+.bet-list {
+  width: 60%; 
+  margin-left: 20%; 
+  margin-right: 20%;
+  margin-bottom: 2em;
+  text-align: left;
+
+  caption {
+    width: 99%;
+    margin: auto;
+    padding: 4px 0;
+    color: $darkBlue;
+    background-color: $white;
+    font-weight: bold;
+  }
+
+  .bets {
+    color: $darkBlue;
+    background-color: $white;
+    tr:nth-child(odd) {
+        color: $white;
+        background-color: gray;
+    }
+  }
+}
+
+.betslip,
+.betreceipt {
+
+  width: 55%;
+  margin: auto;
+
+  h1 {
+    @include linearGradient($liteBlue, $darkBlue);
+    border-radius: 5px;
+  }
+
+}

@@ -20,8 +20,117 @@ li {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-align: center; }
 
 /* VARIABLES */
+body {
+  height: 100vh;
+  color: #ffffff;
+  background: #243E7B;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #243E7B 0%, #0F59DF 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #243E7B), color-stop(100%, #0F59DF));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #243E7B 0%, #0F59DF 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #243E7B 0%, #0F59DF 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #243E7B 0%, #0F59DF 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #243E7B 0%, #0F59DF 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom,GradientType=0 );
+  /* IE6-9 */ }
+
+.wrapper {
+  margin-top: 10vh; }
+
+.header {
+  height: 10vh; }
+  .header .header--brand,
+  .header .header--title {
+    padding: 5px 10px; }
+  .header .header--brand {
+    background: #0F59DF;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0F59DF), color-stop(100%, #010E43));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #0F59DF 0%, #010E43 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom,GradientType=0 );
+    /* IE6-9 */
+    border-radius: 5px 0 0 5px; }
+  .header .header--title {
+    background: #CE4950;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #CE4950 0%, #9D2230 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #CE4950), color-stop(100%, #9D2230));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #CE4950 0%, #9D2230 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #CE4950 0%, #9D2230 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #CE4950 0%, #9D2230 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #CE4950 0%, #9D2230 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom,GradientType=0 );
+    /* IE6-9 */
+    border-radius: 0 5px 5px 0; }
+
+.bet-list {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2em;
+  text-align: left; }
+  .bet-list caption {
+    width: 99%;
+    margin: auto;
+    padding: 4px 0;
+    color: #010E43;
+    background-color: #ffffff;
+    font-weight: bold; }
+  .bet-list .bets {
+    color: #010E43;
+    background-color: #ffffff; }
+    .bet-list .bets tr:nth-child(odd) {
+      color: #ffffff;
+      background-color: gray; }
+
+.betslip,
+.betreceipt {
+  width: 55%;
+  margin: auto; }
+  .betslip h1,
+  .betreceipt h1 {
+    background: #0F59DF;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0F59DF), color-stop(100%, #010E43));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #0F59DF 0%, #010E43 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #0F59DF 0%, #010E43 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom,GradientType=0 );
+    /* IE6-9 */
+    border-radius: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
