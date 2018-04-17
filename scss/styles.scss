@@ -95,13 +95,19 @@ body {
 .betslip,
 .betreceipt {
 
-  width: 74%;
+  width: 76%;
   margin: auto;
 
   h1 {
     font-size: $bannerHeading;
     @include linearGradient($liteBlue, $darkBlue);
     border-radius: 5px;
+  }
+
+  .receipt-display {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px dotted gray;
   }
 
   .selection__title,
@@ -115,6 +121,7 @@ body {
 
   .selections,
   .receipt {
+    margin-top: -10px;
     color: $darkBlue;
     background-color: #fafafa;
   }
@@ -122,7 +129,6 @@ body {
     width: 34%;
     margin: auto;
     padding: .25em 0 1em;
-    border-bottom: 1px dotted gray;
   }
   .js-selection {
     width: 52%;

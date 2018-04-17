@@ -137,7 +137,7 @@ body {
 
 .betslip,
 .betreceipt {
-  width: 74%;
+  width: 76%;
   margin: auto; }
   .betslip h1,
   .betreceipt h1 {
@@ -159,6 +159,11 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom,GradientType=0 );
     /* IE6-9 */
     border-radius: 5px; }
+  .betslip .receipt-display,
+  .betreceipt .receipt-display {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px dotted gray; }
   .betslip .selection__title,
   .betslip .receipt__title,
   .betreceipt .selection__title,
@@ -172,14 +177,14 @@ body {
   .betslip .receipt,
   .betreceipt .selections,
   .betreceipt .receipt {
+    margin-top: -10px;
     color: #010E43;
     background-color: #fafafa; }
   .betslip .receipts,
   .betreceipt .receipts {
     width: 34%;
     margin: auto;
-    padding: .25em 0 1em;
-    border-bottom: 1px dotted gray; }
+    padding: .25em 0 1em; }
   .betslip .js-selection,
   .betreceipt .js-selection {
     width: 52%;

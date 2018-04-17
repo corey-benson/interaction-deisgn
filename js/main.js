@@ -24,6 +24,7 @@ function renderSelection($container, $selection) {
                                                 formatReturns(sel.odds, 0));
 
     $container.append($selection);
+
 }
 
 function renderReceipt($container, $receipt) {
@@ -82,16 +83,23 @@ $.get('http://skybettechtestapi.herokuapp.com/available')
 $app.on('click', '.js-odds', function () {
     var $bet = $(this).parent('.bet');
     var betId = $bet.data('bet_id');
+    $(this).parent('.bet').addClass('active-bet');
 
     if (betslip.indexOf(betId) === -1) {
         var $selection = $templates['selection'].clone();
         $selection.data($bet.data());
 
-        renderSelection($selections, $selection);
         betslip.push(betId);
-    } else {
+
+        if (betslip.length === 1) {
+            renderSelection($selections, $selection);
+        } 
+
+    } else {    
         removeSelection(betId);
         betslip.splice(betslip.indexOf(betId), 1);
+        betslip.length = 0;
+        $(this).parent('.bet').removeClass('active-bet');
     }
 });
 
@@ -116,6 +124,9 @@ $app.on('submit', '.js-selection', function (e) {
         }).done(
             function (data) {
                 //remove bet from selections and add to the receipts
+                $('.bet').removeClass('active-bet');
+                betslip.splice(betslip.indexOf(data.bet_id), 1);
+
                 removeSelection(data.bet_id);
                 var $receipt = $templates['receipt'].clone();
                 $receipt.data(data);
