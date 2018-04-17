@@ -9,12 +9,18 @@ body {
 }
 
 .wrapper {
- margin-top: 10vh;
+  margin-top: 10vh;
+  padding: 2.5em 0 1em;
+  background-color: #fafafa;
+  border-radius: 15px;
 }
 .header {
 
   height: 10vh;
-  font-size: $bannerHeading;
+
+  h1 {
+    font-size: $bannerHeading;
+  }
  
   .header--brand,
   .header--title {
@@ -74,6 +80,26 @@ body {
     font-size: $bannerHeading;
     @include linearGradient($liteBlue, $darkBlue);
     border-radius: 5px;
+  }
+
+  .selection__title {
+    padding: .25em;
+    color: $darkBlue;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .selections {
+    margin-top: -20px;
+    margin-bottom: 11px;
+    color: $darkBlue;
+    background-color: #fafafa;
+  }
+  .js-selection {
+    padding-bottom: 10px;
+    padding-left: .5em;
+    border-bottom: 1px dotted gray;
   }
 
 }

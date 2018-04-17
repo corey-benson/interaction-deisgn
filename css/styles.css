@@ -45,11 +45,15 @@ body {
   /* IE6-9 */ }
 
 .wrapper {
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  padding: 2.5em 0 1em;
+  background-color: #fafafa;
+  border-radius: 15px; }
 
 .header {
-  height: 10vh;
-  font-size: 3vw; }
+  height: 10vh; }
+  .header h1 {
+    font-size: 3vw; }
   .header .header--brand,
   .header .header--title {
     padding: 5px 10px; }
@@ -139,5 +143,23 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom,GradientType=0 );
     /* IE6-9 */
     border-radius: 5px; }
+  .betslip .selection__title,
+  .betreceipt .selection__title {
+    padding: .25em;
+    color: #010E43;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em; }
+  .betslip .selections,
+  .betreceipt .selections {
+    margin-top: -20px;
+    margin-bottom: 11px;
+    color: #010E43;
+    background-color: #fafafa; }
+  .betslip .js-selection,
+  .betreceipt .js-selection {
+    padding-bottom: 10px;
+    padding-left: .5em;
+    border-bottom: 1px dotted gray; }
 
 /*# sourceMappingURL=styles.css.map */
