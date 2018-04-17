@@ -70,7 +70,7 @@
 
         <div class="betreceipt">
             <h1 class="js-toggle">Your Receipts</h1>
-            <div id="receipts" class="js-toggle-target"></div>
+            <div id="receipts" class="receipts js-toggle-target"></div>
         </div>
     </div>
 
@@ -79,6 +79,7 @@
         <td class="bet__event"></td>
         <td class="bet__name"></td>
         <td class="bet__odds js-odds"></td>
+        <td class="bet__remove js-remove-bet"><p>X</p></td>
     </tr>
 </script>
 <script type="text/template" id="selection">
@@ -94,7 +95,6 @@
                 <td class="selection__action">
                     <button type="submit" class="js-place-bet" disabled>Place Bet</button>
                 </td>
-
             </tr>
             </tbody>
         </table>

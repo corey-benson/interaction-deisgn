@@ -118,10 +118,26 @@ body {
     .bet-list .bets tr:nth-child(odd) {
       color: #ffffff;
       background-color: gray; }
+  .bet-list .bet__event,
+  .bet-list .bet__name,
+  .bet-list .bet__odds {
+    padding: 5px 0 5px 15px; }
+  .bet-list .bet__remove {
+    display: none;
+    position: relative;
+    top: 8px;
+    left: 6px;
+    font-size: 16px;
+    font-weight: bold; }
+  .bet-list .js-odds {
+    cursor: pointer; }
+
+.active-bet .bet__remove {
+  display: block; }
 
 .betslip,
 .betreceipt {
-  width: 55%;
+  width: 74%;
   margin: auto; }
   .betslip h1,
   .betreceipt h1 {
@@ -144,20 +160,30 @@ body {
     /* IE6-9 */
     border-radius: 5px; }
   .betslip .selection__title,
-  .betreceipt .selection__title {
+  .betslip .receipt__title,
+  .betreceipt .selection__title,
+  .betreceipt .receipt__title {
     padding: .25em;
     color: #010E43;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     font-size: 1.2em; }
   .betslip .selections,
-  .betreceipt .selections {
-    margin-top: -20px;
-    margin-bottom: 11px;
+  .betslip .receipt,
+  .betreceipt .selections,
+  .betreceipt .receipt {
     color: #010E43;
     background-color: #fafafa; }
+  .betslip .receipts,
+  .betreceipt .receipts {
+    width: 34%;
+    margin: auto;
+    padding: .25em 0 1em;
+    border-bottom: 1px dotted gray; }
   .betslip .js-selection,
   .betreceipt .js-selection {
+    width: 52%;
+    margin: auto;
     padding-bottom: 10px;
     padding-left: .5em;
     border-bottom: 1px dotted gray; }

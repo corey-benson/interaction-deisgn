@@ -68,12 +68,34 @@ body {
         background-color: gray;
     }
   }
+  
+  .bet__event,
+  .bet__name,
+  .bet__odds {
+    padding: 5px 0 5px 15px;
+  }
+  .bet__remove {
+    display: none;
+    position: relative;
+    top: 8px;
+    left: 6px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .js-odds {
+    cursor: pointer;
+  }
+}
+.active-bet {
+  .bet__remove {
+    display: block;
+  }
 }
 
 .betslip,
 .betreceipt {
 
-  width: 55%;
+  width: 74%;
   margin: auto;
 
   h1 {
@@ -82,21 +104,29 @@ body {
     border-radius: 5px;
   }
 
-  .selection__title {
+  .selection__title,
+  .receipt__title {
     padding: .25em;
     color: $darkBlue;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     font-size: 1.2em;
   }
 
-  .selections {
-    margin-top: -20px;
-    margin-bottom: 11px;
+  .selections,
+  .receipt {
     color: $darkBlue;
     background-color: #fafafa;
   }
+  .receipts {
+    width: 34%;
+    margin: auto;
+    padding: .25em 0 1em;
+    border-bottom: 1px dotted gray;
+  }
   .js-selection {
+    width: 52%;
+    margin: auto;
     padding-bottom: 10px;
     padding-left: .5em;
     border-bottom: 1px dotted gray;
