@@ -107,6 +107,8 @@ $app.on('submit', '.js-selection', function (e) {
     e.preventDefault();
     var $selection = $(this);
 
+    console.log($selection);
+
     var stake = $selection.find('.js-stake').val();
     var $button = $selection.find('.js-place-bet');
 
@@ -116,7 +118,8 @@ $app.on('submit', '.js-selection', function (e) {
         $button.attr('disabled', true);
 
         $.ajax({
-            url: 'http://skybettechtestapi.herokuapp.com/bets',
+            url: '',
+            // url: 'http://skybettechtestapi.herokuapp.com/bets',
             method: 'post',
             contentType: 'application/json',
             data: JSON.stringify(data),
@@ -135,11 +138,13 @@ $app.on('submit', '.js-selection', function (e) {
         ).fail(function (e) {
                 //@todo show error message returned from the server
                 $selection.addClass('is-invalid');
+                $selection.append('<p class="error">There is a problem submitting your bet.<br>Please try again later.</p>');
                 console.error(e);
             }
         );
     } else {
         $selection.addClass('is-invalid');
+        $selection.append('<p class="error">There is a problem submitting your bet.<br>Please try again later.</p>');
     }
 });
 

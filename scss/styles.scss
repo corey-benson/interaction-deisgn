@@ -139,3 +139,15 @@ body {
   }
 
 }
+
+.is-invalid {
+  .error {
+    margin: 1em 0;
+    padding: 1em;
+    color: $red;
+    background: #f1eeee;
+    border-radius: 8px;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+}
