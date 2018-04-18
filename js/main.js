@@ -106,9 +106,6 @@ $app.on('click', '.js-odds', function () {
 $app.on('submit', '.js-selection', function (e) {
     e.preventDefault();
     var $selection = $(this);
-
-    console.log($selection);
-
     var stake = $selection.find('.js-stake').val();
     var $button = $selection.find('.js-place-bet');
 
@@ -118,8 +115,7 @@ $app.on('submit', '.js-selection', function (e) {
         $button.attr('disabled', true);
 
         $.ajax({
-            url: '',
-            // url: 'http://skybettechtestapi.herokuapp.com/bets',
+            url: 'http://skybettechtestapi.herokuapp.com/bets',
             method: 'post',
             contentType: 'application/json',
             data: JSON.stringify(data),
